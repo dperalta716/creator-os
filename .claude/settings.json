@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./.claude/skills/reddit-research/scripts/*)",
+      "Bash(./.claude/skills/hn-research/scripts/*)",
+      "Bash(./.claude/skills/medium-research/scripts/*)",
+      "Bash(./.claude/skills/twitter-research/scripts/*)",
+      "Bash(./.claude/skills/dataforseo-research/scripts/*)",
+      "Bash(./.claude/skills/firecrawl-scraper/scripts/*)",
+      "Bash(./.claude/skills/fal-ai/scripts/*)",
+      "Bash(./.claude/skills/medium-scraper/scripts/*)",
+      "Bash(mkdir *)",
+      "Bash(chmod *)",
+      "Bash(cp *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(source *)",
+      "Bash(touch *)",
+      "Bash(npx playwright *)",
+      "Bash(ls *)",
+      "Bash(mv *)",
+      "Bash(find *)",
+      "Bash(cat *)",
+      "Bash(wc *)"
+    ]
+  }
+}

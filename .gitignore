@@ -1,0 +1,9 @@
+.DS_Store
+*.sync-conflict-*
+.claude/settings.local.json
+.claude/skills/*/SKILL.md.backup-*
+.claude/skills/fal-ai/fal-api-key
+.claude/skills/medium-scraper/scripts/node_modules/
+.claude/skills/medium-scraper/scripts/auth.json
+.obsidian/workspace.json
+~/.env
