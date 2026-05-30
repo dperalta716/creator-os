@@ -1,4 +1,4 @@
-# Content-to-Products System
+# Creator OS
 
 An Obsidian vault template powered by Claude Code skills that runs a complete content-to-products pipeline. Automated topic discovery, keyword research, competitive analysis, article generation with voice enforcement, post-draft review with claims verification, and image generation -- all from your terminal. Write Medium articles that drive organic traffic toward digital product sales or email signups.
 
@@ -17,7 +17,7 @@ An Obsidian vault template powered by Claude Code skills that runs a complete co
 
 ```
 git clone [repo-url]
-cd content-seo-vault-template
+cd creator-os
 
 # Open in Claude Code
 claude
@@ -76,7 +76,7 @@ Topic Discovery (/topic-discovery)
 ## Folder Structure
 
 ```
-content-seo-vault-template/
+creator-os/
 ├── 00-Dashboard/          # Home base and overview
 ├── 01-Topic-Discovery/    # Research reports and topic queue
 ├── 02-Articles/

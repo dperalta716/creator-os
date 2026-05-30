@@ -1,10 +1,10 @@
 ---
 name: setup
-description: Interactive guided setup for the Content SEO Vault. Explains the entire system, then walks through identity, content pillars, research sources, voice calibration, API keys, and first run. Start here.
+description: Interactive guided setup for Creator OS. Explains the entire system, then walks through identity, content pillars, research sources, voice calibration, API keys, and first run. Start here.
 user-invocable: true
 ---
 
-# Setup — Content SEO Vault
+# Setup — Creator OS
 
 Welcome to the guided setup. This skill walks through the entire system first, then configures it for your niche interactively.
 

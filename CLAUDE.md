@@ -1,4 +1,4 @@
-# Content SEO Vault -- Claude Code Instructions
+# Creator OS -- Claude Code Instructions
 
 ## Project Overview
 
