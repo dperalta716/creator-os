@@ -68,10 +68,6 @@ Explain what each skill does, when to use it, and how they chain together:
 - `/review-article` — Post-draft review pipeline. Runs unique value analysis against competitors, quality/SEO checks, internal linking, claims verification against official documentation, and a personal experience interview. Produces versioned files through `v4-final.md`.
 - `/generate-article-images` — Creates whiteboard-style diagram images for articles. Runs as a background task during review, or standalone. Generates A/B pairs for you to pick from.
 
-**Products:**
-- `/product-research` — Market research for digital products: Reddit pain points, competitor analysis, pricing research. Used when you're planning what to sell.
-- `/product-draft` — (Coming soon) Will turn product research into actual product drafts.
-
 ### 1.4 The Vault Structure
 
 Explain what each folder is for:

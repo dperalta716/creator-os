@@ -70,8 +70,6 @@ Topic Discovery (/topic-discovery)
 | `/generate-article` | End-to-end article creation with competitive analysis |
 | `/review-article` | Post-draft review: quality, SEO, claims verification, voice enforcement |
 | `/generate-article-images` | Whiteboard-style diagram generation |
-| `/product-research` | Market research for digital products |
-| `/product-draft` | (Coming soon) Product drafting from research |
 
 ## Folder Structure
 
