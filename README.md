@@ -30,14 +30,16 @@ The `/setup` skill explains everything and walks you through configuration inter
 
 ## API Keys
 
-| Key | Required? | What It Powers | Sign Up |
-|-----|-----------|----------------|---------|
-| `DATAFORSEO_USER` + `DATAFORSEO_PASS` | Yes | Keyword research, SERP analysis, Medium search | https://dataforseo.com/ |
-| `FIRECRAWL_API_KEY` | Yes | Scraping competitor articles | https://firecrawl.dev/ |
-| `XAI_API_KEY` | Optional | Twitter/X research via Grok | https://console.x.ai/ |
-| fal.ai key | Optional | AI image generation for articles | https://fal.ai/ |
+| Key | Required? | What It Powers | Cost | Sign Up |
+|-----|-----------|----------------|------|---------|
+| `DATAFORSEO_USER` + `DATAFORSEO_PASS` | Yes | Keyword research, SERP analysis, Medium search | Pay-as-you-go, $50 minimum balance (often lasts 6+ months) | https://dataforseo.com/ |
+| `FIRECRAWL_API_KEY` | Yes | Scraping competitor articles | Free — generous free tier | https://firecrawl.dev/ |
+| `XAI_API_KEY` | Optional | Twitter/X research via Grok | Pay-as-you-go, ~$5 minimum balance | https://console.x.ai/ |
+| fal.ai key | Optional | AI image generation for articles | Pay-as-you-go (a few cents per image) | https://fal.ai/ |
 
 Keys go in `~/.env` (see `.env.example`). The fal.ai key goes in `.claude/skills/fal-ai/fal-api-key`.
+
+**On cost:** DataForSEO is usage-based, not a subscription. It asks for a $50 minimum balance to start, but at this system's usage that often lasts six months or more — far cheaper than the subscription SEO suites it replaces (Ahrefs Lite starts at $129/month, Semrush Pro around $140/month, with the tiers most pros use running $200–250/month). Firecrawl's free tier covers normal use, and the only other paid pieces (xAI for Twitter research, fal.ai for images) are both optional and pay-as-you-go.
 
 ## The Pipeline
 

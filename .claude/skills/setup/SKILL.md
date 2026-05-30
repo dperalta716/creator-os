@@ -222,11 +222,13 @@ Now that they understand the system and have configured their niche, set up the 
 1. **DataForSEO** (`DATAFORSEO_USER` + `DATAFORSEO_PASS`)
    - Needed for: keyword research, SERP analysis, Medium article search
    - Powers: topic discovery keyword validation and article generation competitive analysis
+   - Cost: pay-as-you-go with a $50 minimum balance to start. At this system's usage that often lasts six months or more — far cheaper than the subscription SEO suites it replaces (Ahrefs Lite starts at $129/month, Semrush Pro around $140/month, with the tiers most pros use running $200–250/month).
    - Sign up: https://dataforseo.com/
    - Check: `grep DATAFORSEO ~/.env 2>/dev/null`
 
 2. **Firecrawl** (`FIRECRAWL_API_KEY`)
    - Needed for: scraping competitor articles during article generation
+   - Cost: free — the free tier is generous enough for normal use of this system.
    - Sign up: https://firecrawl.dev/
    - Check: `grep FIRECRAWL ~/.env 2>/dev/null`
 
@@ -235,6 +237,7 @@ Now that they understand the system and have configured their niche, set up the 
 3. **XAI / Grok** (`XAI_API_KEY`)
    - Enables: Twitter/X research via Grok API for finding pain points and trending topics
    - If skipped: topic discovery still works using Reddit alone
+   - Cost: pay-as-you-go with a ~$5 minimum balance.
    - Sign up: https://console.x.ai/
    - Check: `grep XAI ~/.env 2>/dev/null`
 
