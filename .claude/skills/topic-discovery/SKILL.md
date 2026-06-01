@@ -26,17 +26,17 @@ Dispatch 2 parallel agents:
 Search each content pillar keyword across default subreddits:
 ```bash
 ./.claude/skills/reddit-research/scripts/reddit-search.sh "claude code" "ClaudeAI,artificial" "week" 10
-./.claude/skills/reddit-research/scripts/reddit-search.sh "suno ai" "SunoAI" "week" 10
-./.claude/skills/reddit-research/scripts/reddit-search.sh "ai workflow" "productivity,SideProject" "week" 10
-./.claude/skills/reddit-research/scripts/reddit-search.sh "wispr flow" "productivity" "month" 5
-./.claude/skills/reddit-research/scripts/reddit-search.sh "groq whisper" "artificial,SideProject" "month" 5
-./.claude/skills/reddit-research/scripts/reddit-search.sh "chatgpt image" "ChatGPT" "week" 10
-./.claude/skills/reddit-research/scripts/reddit-search.sh "ai tools" "artificial,productivity" "week" 10
+./.claude/skills/reddit-research/scripts/reddit-search.sh "keyword research" "SEO,content_marketing" "week" 10
+./.claude/skills/reddit-research/scripts/reddit-search.sh "ai workflow" "artificial,SideProject" "week" 10
+./.claude/skills/reddit-research/scripts/reddit-search.sh "content marketing strategy" "content_marketing,Blogging" "month" 5
+./.claude/skills/reddit-research/scripts/reddit-search.sh "on-page seo" "SEO,Blogging" "month" 5
+./.claude/skills/reddit-research/scripts/reddit-search.sh "link building" "SEO" "week" 10
+./.claude/skills/reddit-research/scripts/reddit-search.sh "ai tools" "artificial,ChatGPT" "week" 10
 ```
 
 **Agent 2 — Twitter/X Research:**
 ```bash
-./.claude/skills/twitter-research/scripts/grok-search.sh "What are the most discussed AI tools and features on Twitter this week? Focus on Claude, Claude Code, Suno, image generation, and AI workflows. What pain points and frustrations are people expressing?"
+./.claude/skills/twitter-research/scripts/grok-search.sh "What are the most discussed AI tools and SEO topics on Twitter this week? Focus on Claude, Claude Code, content marketing, keyword research, and AI workflows. What pain points and frustrations are people expressing?"
 ./.claude/skills/twitter-research/scripts/grok-search.sh "What questions are people asking about AI tools on Twitter that nobody has answered well? What do they wish existed?"
 ```
 

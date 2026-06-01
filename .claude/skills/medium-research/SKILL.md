@@ -41,7 +41,7 @@ Find top-performing Medium articles for a given keyword using Google site:medium
 
 **Step 1 — Find articles:**
 ```bash
-./.claude/skills/medium-research/scripts/medium-search.sh "suno ai prompts"
+./.claude/skills/medium-research/scripts/medium-search.sh "keyword research"
 ```
 
 **Step 2 — Scrape top performers for analysis:**
@@ -60,10 +60,10 @@ Find top-performing Medium articles for a given keyword using Google site:medium
 
 ```bash
 ./medium-search.sh "claude code" 10
-./medium-search.sh "suno ai" 10
+./medium-search.sh "keyword research" 10
 ./medium-search.sh "ai workflow automation" 10
-./medium-search.sh "wispr flow" 5
-./medium-search.sh "groq whisper" 5
-./medium-search.sh "chatgpt image generation" 10
-./medium-search.sh "nano banana gemini" 5
+./medium-search.sh "content marketing strategy" 5
+./medium-search.sh "on-page seo" 5
+./medium-search.sh "link building" 10
+./medium-search.sh "content clusters" 5
 ```

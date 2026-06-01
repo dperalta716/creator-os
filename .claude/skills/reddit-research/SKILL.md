@@ -29,7 +29,7 @@ Search Reddit for posts, questions, and discussions matching a keyword. Returns 
 
 **Parameters:**
 - `keyword` (required): Search term
-- `subreddits` (optional): Comma-separated list. Default: `ClaudeAI,ChatGPT,artificial,SunoAI,productivity,ArtificialIntelligence,SideProject`
+- `subreddits` (optional): Comma-separated list. Default: `ClaudeAI,ChatGPT,artificial,SEO,content_marketing,Blogging,SideProject`
 - `time_filter` (optional): `hour`, `day`, `week`, `month`, `year`, `all`. Default: `week`
 - `limit` (optional): Results per subreddit, 1-25. Default: `10`
 
@@ -39,9 +39,9 @@ When called from topic-discovery without specific subreddits, search these:
 - r/ClaudeAI — Claude and Claude Code discussions
 - r/ChatGPT — ChatGPT usage, tips, image generation
 - r/artificial — General AI news and tools
-- r/SunoAI — AI music creation
-- r/productivity — AI productivity workflows
-- r/ArtificialIntelligence — Broader AI discussions
+- r/SEO — search optimization and ranking discussions
+- r/content_marketing — content strategy and distribution
+- r/Blogging — blogging, traffic, and monetization
 - r/SideProject — What people are building with AI
 
 ## Interpreting Results

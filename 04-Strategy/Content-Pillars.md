@@ -3,16 +3,16 @@
 # Content Pillars
 
 ## 1. Claude Code (PRIMARY)
-David's core expertise. Demystifying Claude Code for people who want to level up their work -- skills, custom commands, workflows, Obsidian integration, real use cases. CoWork content bridges readers toward Code.
-**Keywords to explore:** claude code tutorial, claude code skills, claude code custom commands, claude code obsidian, claude code vs cowork, how to use claude code, claude code for non-developers
+Core expertise. Demystifying Claude Code for people who want to level up their work -- skills, custom commands, workflows, Obsidian integration, real use cases.
+**Keywords to explore:** claude code tutorial, claude code skills, claude code custom commands, claude code obsidian, how to use claude code, claude code for non-developers
 
-## 2. Suno AI
-Music creation, prompting techniques, workflow tips.
-**Keywords to explore:** suno ai prompts, how to make music with suno, suno tips
+## 2. Keyword Research
+Finding and validating search demand, search intent, and ranking opportunities.
+**Keywords to explore:** keyword research for beginners, search intent, keyword difficulty, long tail keywords
 
-## 3. Wispr Flow
-Dictation workflows, voice-to-text productivity.
-**Keywords to explore:** wispr flow review, voice to text workflow, dictation for developers
+## 3. On-Page SEO
+Optimizing content to rank -- titles, headings, internal linking, structure.
+**Keywords to explore:** on-page seo checklist, title tag optimization, internal linking strategy
 
 ## 4. AI Workflow Design
 Connecting tools, building systems, automation without code.
@@ -22,13 +22,13 @@ Connecting tools, building systems, automation without code.
 How to think about AI as a creative/business partner.
 **Keywords to explore:** how to use ai effectively, ai for business, working with claude
 
-## 6. Image Generation
-GPT Image 2 (ChatGPT), Nano Banana (Gemini), prompting, practical creative workflows.
-**Keywords to explore:** chatgpt image generation, nano banana gemini, ai image prompts
+## 6. Content Marketing Strategy
+Planning content that drives organic traffic, topic clusters, and editorial calendars.
+**Keywords to explore:** content marketing strategy, topic clusters, content calendar, content distribution
 
-## 7. Speech-to-Text / Groq API
-Voice-to-text workflows, building with Groq, "almost free" STT.
-**Keywords to explore:** groq whisper api, speech to text api cheap, voice to text workflow
+## 7. Link Building
+Earning authority and backlinks the sustainable way.
+**Keywords to explore:** link building strategies, how to get backlinks, guest posting, digital pr
 
 ## 8. Building AI Apps
 How to build practical AI tools without being an engineer.

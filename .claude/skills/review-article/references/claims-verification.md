@@ -28,15 +28,15 @@ A claim is any sentence that asserts a factual statement about a tool — someth
 
 There are no academic citations to flag claims. Instead, scan for sentences containing:
 
-1. **A tool or product name** (Claude, Claude Code, Suno, Wispr Flow, Groq, etc.)
+1. **A tool or product name** (Claude, Claude Code, Ahrefs, Semrush, Google Search Console, etc.)
 2. **Combined with a factual assertion verb:** supports, costs, includes, allows, requires, works with, is available, was released, can, cannot, enables, integrates with, ships with, comes with, runs on, uses
 
 This heuristic won't catch every claim, but it catches the high-risk ones — the factual assertions that would damage credibility if wrong.
 
 **Examples of extracted claims:**
 - "Claude Code **supports** MCP servers for extending its capabilities" → verify
-- "Suno **allows** up to 10 free songs per day" → verify
-- "The Groq API **costs** nothing for the free tier" → verify
+- "Ahrefs **includes** up to 10,000 keywords per report on the Lite plan" → verify
+- "Google Search Console **is** free for all verified site owners" → verify
 - "I **find** Claude Code faster for multi-file edits" → skip (personal experience)
 
 ## Where to Verify: Official Documentation Sources
@@ -49,11 +49,11 @@ Go to the official source for whatever tool the article discusses. The tool dete
 |---|---|
 | Claude / Claude Code / Claude CoWork | docs.anthropic.com, anthropic.com/claude |
 | Anthropic API | docs.anthropic.com/en/docs |
-| Suno AI | suno.com/faq, suno.com/blog |
-| Wispr Flow | wispr.com, wispr.com/flow |
-| Groq API | console.groq.com/docs |
-| GPT Image / OpenAI | platform.openai.com/docs |
-| Nano Banana | Check their official site at time of verification |
+| Ahrefs | ahrefs.com/blog, help.ahrefs.com |
+| Semrush | semrush.com, semrush.com/kb |
+| Google Search Console | support.google.com/webmasters, developers.google.com/search |
+| OpenAI / ChatGPT | platform.openai.com/docs |
+| Moz | moz.com/learn/seo |
 
 ### For Any Other Tool
 

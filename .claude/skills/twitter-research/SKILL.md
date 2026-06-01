@@ -1,7 +1,7 @@
 ---
 name: twitter-research
 description: Search Twitter/X for AI tool discussions via Grok (xAI) API. Use for topic discovery — what's trending, what questions people are asking, what features are generating buzz.
-argument-hint: topic (e.g., "claude code" or "What are people saying about Suno AI this week?")
+argument-hint: topic (e.g., "claude code" or "What are people saying about content marketing this week?")
 user-invocable: true
 ---
 
@@ -48,9 +48,9 @@ XAI_API_KEY=your-key-here
 
 ```bash
 ./grok-search.sh "What are people discussing about Claude Code on Twitter this week? What questions are they asking, what frustrations do they have, what tips are they sharing?"
-./grok-search.sh "What's trending on AI Twitter about image generation with ChatGPT and Gemini this week?"
+./grok-search.sh "What's trending on SEO Twitter about Google algorithm updates and content strategy this week?"
 ./grok-search.sh "What are indie hackers and builders saying about AI tools on Twitter? Any new workflows or products people are excited about?"
-./grok-search.sh "What complaints or frustrations are people expressing about Suno AI on Twitter?"
+./grok-search.sh "What complaints or frustrations are people expressing about SEO tools like Ahrefs and Semrush on Twitter?"
 ./grok-search.sh "What AI tool announcements or releases are generating the most buzz on Twitter this week?"
 ```
 

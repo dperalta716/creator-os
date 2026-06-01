@@ -194,7 +194,7 @@ The sub-agent follows the full process defined in the `generate-article-images` 
 1. Check `02-Articles/Published/` for existing published articles
 2. If the folder is empty or contains only `.gitkeep`, output: **"No internal links — no published articles yet."** and skip to Phase 3.
 3. If published articles exist, read their frontmatter/titles to understand their topics
-4. Only suggest links where there's genuine topical overlap — a Claude CoWork article links to another Claude article, not to Suno
+4. Only suggest links where there's genuine topical overlap — an on-page SEO article links to another SEO article, not to an unrelated keyword-research-tool review
 5. For each suggested link: specify the exact sentence to add it to, the anchor text, and the target article
 6. Apply forward links (new → old) automatically
 7. List backward link recommendations in the completion output (don't modify existing published articles automatically — the user reviews those).

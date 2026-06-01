@@ -6,7 +6,7 @@ Tiered framework for citing statistics, data points, and factual claims. Higher 
 
 First-party documentation, changelogs, pricing pages, and official announcements from the tool maker.
 
-**Examples:** Anthropic docs, Suno release notes, Wispr Flow docs, OpenAI blog, Google AI announcements, official GitHub repos, product pricing pages, official API documentation.
+**Examples:** Anthropic docs, OpenAI blog, Google Search Central docs, Ahrefs/Semrush help docs, Google AI announcements, official GitHub repos, product pricing pages, official API documentation.
 
 **Signal in prose:** "Cowork launched as a research preview in early 2026 and hit enterprise GA by April ([changelog](URL))."
 

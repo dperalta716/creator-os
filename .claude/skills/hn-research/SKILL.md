@@ -40,8 +40,8 @@ Run these to find what the tech community is discussing:
 ./hn-search.sh "Claude" "story" "search_by_date" 10
 ./hn-search.sh "Claude Code" "story" "search" 10
 ./hn-search.sh "AI workflow" "story" "search" 10
-./hn-search.sh "Suno" "story" "search" 5
-./hn-search.sh "speech to text" "story" "search_by_date" 10
+./hn-search.sh "SEO" "story" "search" 5
+./hn-search.sh "content marketing" "story" "search_by_date" 10
 ```
 
 ## Interpreting Results
