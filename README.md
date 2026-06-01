@@ -72,6 +72,7 @@ Topic Discovery (/topic-discovery)
 | `/generate-article` | End-to-end article creation with competitive analysis |
 | `/review-article` | Post-draft review: quality, SEO, claims verification, voice enforcement |
 | `/generate-article-images` | Whiteboard-style diagram generation |
+| `/tone-of-voice` | Deep voice calibration; produces the Voice-Guide.md the article skills enforce |
 
 ## Folder Structure
 

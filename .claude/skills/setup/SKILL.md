@@ -67,6 +67,7 @@ Explain what each skill does, when to use it, and how they chain together:
 - `/generate-article` — End-to-end article creation. Takes a topic from the queue, does competitive analysis (scrapes top-ranking articles), finds content gaps, then drafts an article in your voice that fills those gaps. Produces a `v1-draft.md`.
 - `/review-article` — Post-draft review pipeline. Runs unique value analysis against competitors, quality/SEO checks, internal linking, claims verification against official documentation, and a personal experience interview. Produces versioned files through `v4-final.md`.
 - `/generate-article-images` — Creates whiteboard-style diagram images for articles. Runs as a background task during review, or standalone. Generates A/B pairs for you to pick from.
+- `/tone-of-voice` — Deep voice calibration. Interviews you about your content and how you write, generates a personalized voice guide, and validates it against a blank-slate test. `/setup` offers this at the end; run it any time to refine how your articles sound.
 
 ### 1.4 The Vault Structure
 
@@ -92,7 +93,7 @@ Two files control how your articles sound:
 - `Reference/Voice-Guide.md` — Defines your writing voice: tone, sentence patterns, what to do and what to avoid. The article generation and review skills read this file and enforce it.
 - `Reference/Source-Tiers.md` — Defines how claims should be sourced. Tier 1 is official docs, Tier 4 is community signals. The review pipeline verifies every factual claim against these standards.
 
-The voice guide ships with a default voice (knowledgeable, practical, direct). We'll calibrate it to YOUR voice during setup.
+The voice guide ships with a default voice (knowledgeable, practical, direct). During setup we'll set a quick starter version, and at the end you can run `/tone-of-voice` for a full calibration — a guided interview that captures how you actually sound and validates the guide against a blank-slate test.
 
 ### 1.6 Check for Questions
 
@@ -180,36 +181,17 @@ Do NOT promise skills for platforms that require authenticated access or are tec
 **Also update `/topic-discovery`:**
 If new sources are added, update the topic-discovery SKILL.md to include the new research commands in Phase 1. Update the default search keywords to match their content pillars.
 
-### Step 4: Voice
+### Step 4: Voice (quick starter)
 
-Present the current voice guide and calibrate to their actual writing.
+Set a working *starter* voice now. The deep calibration happens at the end via `/tone-of-voice` (Step 6) — don't try to fully nail their voice here.
 
 1. Read `Reference/Voice-Guide.md`
-2. Present a summary of the key traits: knowledgeable but accessible, confident but not arrogant, practical, direct
-3. Ask: "Does this match how you naturally write, or would you want a different tone?"
+2. Present a one-line summary of the default traits: knowledgeable but accessible, confident but not arrogant, practical, direct.
+3. Ask: "Does that rough tone work as a starting point, or would you describe yours differently?"
+4. Update the **Identity** section at the top of `Reference/Voice-Guide.md` with their name, background, and positioning from Step 1. If they described a different tone, lightly adjust the Tone spectrum line — keep it quick.
+5. Tell them: "That's a starter voice so the pipeline works today. At the end I'll offer to run `/tone-of-voice`, which interviews you properly and calibrates this guide — it reuses your pillars so it won't re-ask what we just covered."
 
-**Ask for writing samples:**
-"Do you have any existing content I can look at to get a feel for your voice? This could be:
-- Blog posts or articles you've written
-- YouTube video scripts or descriptions
-- Social media posts or threads
-- A local file or document you've written"
-
-**If they provide samples:**
-Read the samples and identify voice patterns:
-- Sentence length and rhythm
-- Formality level
-- Use of humor
-- How they handle technical vs. casual content
-- Personal anecdotes vs. authority
-- Unique speech patterns or phrases
-
-Then rewrite `Reference/Voice-Guide.md` to match their natural voice. Keep the structure (Do/Don't/AI tells to avoid) but adapt the content to describe THEIR voice, not the default.
-
-**If no samples:**
-Adjust based on their verbal description if they want changes. If the default voice works for them, leave it as-is but update the identity section at the top.
-
-Always update the "Identity" section at the top of Voice-Guide.md with their actual background and positioning.
+Do NOT collect writing samples or run a full voice analysis here — that's `/tone-of-voice`'s job.
 
 ### Step 5: API Keys
 
@@ -277,7 +259,16 @@ Playwright is needed for the medium-scraper skill and any custom browser-based r
 cd .claude/skills/medium-scraper/scripts && npm install && cd -
 ```
 
-### Step 6: First Run
+### Step 6: Deepen Your Voice (optional)
+
+Setup gave them a starter voice in Step 4. Now offer the real calibration:
+
+"You've got a working starter voice. Want to run `/tone-of-voice` now for a properly calibrated guide? It reads your content pillars, so it won't re-ask what we just covered — it focuses on how you actually sound, then validates the result with a blank-slate test. It saves to the same `Reference/Voice-Guide.md` your article skills read. Takes about 10–15 minutes, and you can always do it later."
+
+- **If yes:** invoke the `tone-of-voice` skill with the argument `from-setup` (i.e. `/tone-of-voice from-setup`). That argument makes it use blog format, reuse the pillars (Step 0.5 pre-seed), skip the "refine or start fresh" prompt, and save to the default path. When it finishes, continue to Step 7.
+- **If no:** note they can run `/tone-of-voice` any time they want a deeper voice guide. Continue to Step 7.
+
+### Step 7: First Run
 
 After setup is complete, offer to kick off their first topic discovery:
 
@@ -299,7 +290,7 @@ Before finishing setup, verify all of these:
 - [ ] `CLAUDE.md` updated with their name and niche
 - [ ] `04-Strategy/Content-Pillars.md` has their pillars (not the examples)
 - [ ] `01-Topic-Discovery/Sources.md` has their subreddits and sources
-- [ ] `Reference/Voice-Guide.md` calibrated to their voice
+- [ ] `Reference/Voice-Guide.md` starter set (Identity updated); `/tone-of-voice` offered for full calibration
 - [ ] Required API keys configured (DataForSEO + Firecrawl) or acknowledged as pending
 - [ ] Optional API keys configured or consciously skipped
 - [ ] Playwright installed (or noted as needed later)

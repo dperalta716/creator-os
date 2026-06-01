@@ -16,6 +16,7 @@ This is [Your Name]'s personal content-to-products system. Medium articles about
 
 ## Skills Available
 
+**Research:**
 - `/topic-discovery` -- Run full intelligence pipeline (Reddit + HN + Medium + Twitter)
 - `/reddit-research [keyword]` -- Search Reddit for posts/questions
 - `/hn-research [keyword]` -- Search Hacker News for stories/discussions
@@ -23,6 +24,12 @@ This is [Your Name]'s personal content-to-products system. Medium articles about
 - `/twitter-research [topic]` -- Search Twitter/X via Grok API
 - `/dataforseo-research` -- SERP analysis and keyword data (see skill for sub-scripts)
 - `/firecrawl-scraper` -- Web scraping for competitor articles
+
+**Content Creation:**
+- `/generate-article` -- End-to-end article creation with competitive analysis
+- `/review-article` -- Post-draft review: quality, SEO, claims verification, voice enforcement
+- `/generate-article-images` -- Whiteboard-style diagram generation
+- `/tone-of-voice` -- Deep voice calibration; produces the `Reference/Voice-Guide.md` the article skills enforce
 
 ## Key Conventions
 

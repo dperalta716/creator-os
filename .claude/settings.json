@@ -9,6 +9,7 @@
       "Bash(./.claude/skills/firecrawl-scraper/scripts/*)",
       "Bash(./.claude/skills/fal-ai/scripts/*)",
       "Bash(./.claude/skills/medium-scraper/scripts/*)",
+      "Bash(./.claude/skills/tone-of-voice/scripts/*)",
       "Bash(mkdir *)",
       "Bash(chmod *)",
       "Bash(cp *)",
