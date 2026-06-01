@@ -205,8 +205,9 @@ Now that they understand the system and have configured their niche, set up the 
    - Needed for: keyword research, SERP analysis, Medium article search
    - Powers: topic discovery keyword validation and article generation competitive analysis
    - Cost — **state these numbers explicitly to the user; do NOT soften "$50" into "a small balance":**
-     - It's pay-as-you-go with a **$50 minimum first deposit**. No monthly fee, credits roll over indefinitely, and new accounts get ~$1 in free credits to test before depositing.
-     - At this system's usage that $50 often lasts **six months or more**.
+     - It's pay-as-you-go with a **$50 minimum first deposit**. No monthly fee, and credits roll over indefinitely.
+     - **You don't need the $50 to start.** New accounts get **~$1 in free credits**, and API calls cost fractions of a cent — that's more than enough for several rounds of real keyword research and SERP checks. So even someone who can't spend $50 today should sign up, grab the key, and run the real pipeline on the free credit first.
+     - At this system's usage the $50 (once you deposit it) often lasts **six months or more**.
      - Make the comparison concrete and hard: the subscription suites it replaces — Ahrefs and Semrush — run **$130+/month** (well over $1,500/year). The headline is **$50 once that lasts months vs. $130+ every single month**. This contrast is part of the story they'll tell readers, so they should feel it themselves.
    - Sign up: https://dataforseo.com/
    - Check: `grep DATAFORSEO ~/.env 2>/dev/null`
@@ -239,8 +240,8 @@ Now that they understand the system and have configured their niche, set up the 
 - If they want to skip an optional key: confirm that's fine, note which features won't be active
 
 **If they can't or don't want a REQUIRED key right now (e.g. "I don't have $50 for DataForSEO yet"):**
-- Don't block setup or make them feel stuck. They can add the key any time later by dropping it into `~/.env` — nothing needs to be re-run.
-- Be honest about what still works in the meantime, so they know what they're trading:
+- **First, remove the money blocker — don't let "$50" end the conversation.** They don't need it to start: signing up gives ~$1 in free credits and calls cost fractions of a cent, so that's enough for several rounds of real keyword research and SERP checks. Encourage them to sign up anyway, grab `DATAFORSEO_USER` + `DATAFORSEO_PASS`, and save them now — they can run the full pipeline on the free credit and only deposit the $50 once they've seen it work.
+- If they still decline entirely, don't block setup — they can add the key any time later by dropping it into `~/.env`, nothing needs re-running. Be honest about what still works in the meantime, so they know what they're trading:
   - **Without DataForSEO:** the qualitative side still runs — `/topic-discovery` surfaces pain points from Reddit (and Twitter, if XAI is set), and you can still draft and review articles. What you lose is keyword *validation*, search-volume data, SERP clustering, and the Medium competitive search — so you're writing on instinct, not validated demand, until you add it.
   - **Without Firecrawl:** `/generate-article`'s competitor scraping won't run, so drafts won't be informed by what's already ranking. Firecrawl's tier is **free**, so nudge them to set at least this one up even if DataForSEO waits.
 - Mark the key as pending in the completion summary and continue. Setup completes either way.
