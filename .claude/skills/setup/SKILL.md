@@ -204,7 +204,10 @@ Now that they understand the system and have configured their niche, set up the 
 1. **DataForSEO** (`DATAFORSEO_USER` + `DATAFORSEO_PASS`)
    - Needed for: keyword research, SERP analysis, Medium article search
    - Powers: topic discovery keyword validation and article generation competitive analysis
-   - Cost: pay-as-you-go with a $50 minimum balance to start. At this system's usage that often lasts six months or more — far cheaper than the subscription SEO suites it replaces (Ahrefs Lite starts at $129/month, Semrush Pro around $140/month, with the tiers most pros use running $200–250/month).
+   - Cost — **state these numbers explicitly to the user; do NOT soften "$50" into "a small balance":**
+     - It's pay-as-you-go with a **$50 minimum first deposit**. No monthly fee, credits roll over indefinitely, and new accounts get ~$1 in free credits to test before depositing.
+     - At this system's usage that $50 often lasts **six months or more**.
+     - Make the comparison concrete and hard: the subscription suites it replaces — Ahrefs and Semrush — run **$130+/month** (well over $1,500/year). The headline is **$50 once that lasts months vs. $130+ every single month**. This contrast is part of the story they'll tell readers, so they should feel it themselves.
    - Sign up: https://dataforseo.com/
    - Check: `grep DATAFORSEO ~/.env 2>/dev/null`
 
@@ -234,6 +237,13 @@ Now that they understand the system and have configured their niche, set up the 
 - If present: confirm it's working (for DataForSEO/Firecrawl, you can do a quick test request)
 - If missing: explain what it unlocks in context of THEIR workflow, link to signup, walk through saving it to `~/.env`
 - If they want to skip an optional key: confirm that's fine, note which features won't be active
+
+**If they can't or don't want a REQUIRED key right now (e.g. "I don't have $50 for DataForSEO yet"):**
+- Don't block setup or make them feel stuck. They can add the key any time later by dropping it into `~/.env` — nothing needs to be re-run.
+- Be honest about what still works in the meantime, so they know what they're trading:
+  - **Without DataForSEO:** the qualitative side still runs — `/topic-discovery` surfaces pain points from Reddit (and Twitter, if XAI is set), and you can still draft and review articles. What you lose is keyword *validation*, search-volume data, SERP clustering, and the Medium competitive search — so you're writing on instinct, not validated demand, until you add it.
+  - **Without Firecrawl:** `/generate-article`'s competitor scraping won't run, so drafts won't be informed by what's already ranking. Firecrawl's tier is **free**, so nudge them to set at least this one up even if DataForSEO waits.
+- Mark the key as pending in the completion summary and continue. Setup completes either way.
 
 **Saving keys:**
 ```bash
